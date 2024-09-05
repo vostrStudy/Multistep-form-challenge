@@ -1,0 +1,65 @@
+@import '../../global-styles/variables.scss';
+.formHeader{
+    padding-bottom:40px;
+}
+
+.text{
+    color:var(--special_gray)
+}
+
+.form{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:40px;
+    @media (min-width:$tablet-width){
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (min-width:$desktop-width){
+      }
+}
+
+.label{
+    border:1px solid var(--special_gray_light);
+    border-radius: 10px;
+    font-size: 22px;
+    height:60px;
+    display:flex;
+    align-items: center;
+    padding-left: 100px;
+    transition: border 0.3s ease;
+    position:relative;
+    cursor:pointer;
+}
+
+.label::before{
+    content:'';
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:20%;
+    left:30px;
+    border:1px solid var(--special_gray);
+    border-radius: 10px;
+}
+
+.input{
+    display:none;
+    
+}
+
+.input:checked +.label {
+    border:1px solid var(--special_orange);
+  }
+
+
+.input:checked +.label::before{
+    background-color:var(--special_orange);
+    border:none;
+    background-image: url('../../../public/svg/checkmark.svg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  

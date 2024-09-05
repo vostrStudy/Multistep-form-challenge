@@ -1,0 +1,17 @@
+.button{
+    width:160px;
+    height:56px;
+    background-color: var(--special_orange);
+    border:none;
+    border-radius: 10px;
+    color:var(--white);
+    font-size: 20px;
+}
+
+.button:hover{
+    background-color: var(--special_orange_dark);
+}
+
+.button:active{
+    background-color: var(--special_orange_light);
+}

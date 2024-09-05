@@ -1,0 +1,23 @@
+@import '../global-styles/variables.scss';
+.successScreen{
+    display:none;
+}
+.sectionWrapper{
+    background-color: var(--white);
+    border-radius: 10px;;
+    box-shadow: 10px 5px 5px darkkhaki;
+    padding:40px;
+}
+.formWrapper{
+    padding:40px 0;
+    border-top: solid 1px var(--special_gray_light);
+    border-bottom: solid 1px var(--special_gray_light);
+}
+
+.buttonsWrapper{
+    padding-top:40px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

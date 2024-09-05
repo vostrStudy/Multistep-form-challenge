@@ -1,0 +1,22 @@
+.button{
+    width:160px;
+    height:56px;
+    background-color:var(--white);
+    border:none;
+    border-radius: 10px;
+    color:var(--special_orange);
+    font-size: 20px;
+    border: 1px solid var(--special_orange);
+}
+
+.first{
+    display: none;
+}
+
+.button:hover{
+    border: 1px solid var(--special_orange_dark);
+}
+
+.button:active{
+    border: 1px solid var(--special_orange_light);
+}

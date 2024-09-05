@@ -1,0 +1,105 @@
+@import '../global-styles/variables.scss';
+
+
+.barWrapper{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.stepWrapper{
+    position:relative;
+    width:17%;
+}
+
+
+
+// .barWrapper>:not(:first-child)::before{
+//     content: '';
+//     position:absolute;
+//     width:calc(100% - 10px);
+
+//     height:10px;
+//     border-radius: 10%;
+//     background-color: var(--special_gray_light);
+//     top:50%;
+//     left: -115%;
+//     //need to check how to make the pseudoelement elastic and respect the margin to t
+//     @media (min-width:$tablet-width){
+//     content: '';
+//     position:absolute;
+//     border-radius: 10px;
+//     top:50%;
+//       }
+// }
+
+
+
+.number{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: var(--special_gray_light);
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+.number:not(.first)::before {
+    content: '';
+    position:absolute;
+    width:calc(100% - 10px);
+
+    height:10px;
+    border-radius: 10%;
+    background-color: var(--special_gray_light);
+    top:50%;
+    left: -115%;
+    //need to check how to make the pseudoelement elastic and respect the margin to t
+    @media (min-width:$tablet-width){
+    content: '';
+    position:absolute;
+    border-radius: 10px;
+    top:50%;
+      }
+}
+
+.number--active{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: var(--special_orange);
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    
+}
+
+.number--active:not(.first)::before {
+    content: '';
+    position:absolute;
+    width:calc(100% - 10px);
+
+    height:10px;
+    border-radius: 10%;
+    background-color: var(--special_orange);
+    transition: background-color 5s ease;
+    // background: linear-gradient(to right, var(--special_orange)50%, var(--special_gray_light) 50%,) left;
+    // background-size: 200%;
+    transition: 5s ease-out;
+    top:50%;
+    left: -115%;
+    //need to check how to make the pseudoelement elastic and respect the margin to t
+    @media (min-width:$tablet-width){
+    content: '';
+    position:absolute;
+    border-radius: 10px;
+    top:50%;
+      }
+}

@@ -1,0 +1,42 @@
+@import '../../global-styles/variables.scss';
+
+.formHeader{
+    padding-bottom:40px;
+}   
+
+.text{
+    color:var(--special_gray)
+}
+
+.infoList{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:40px;
+    @media (min-width:$tablet-width){
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media (min-width:$desktop-width){
+      }
+}
+
+.infoItem{
+    background-color:var(--special_gray_light);
+    border-radius: 10px;
+    height:80px;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap:10px;
+    padding:20px;
+    
+
+}
+
+.challengeList{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    flex-wrap: wrap;
+}
+  

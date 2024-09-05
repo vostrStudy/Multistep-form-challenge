@@ -1,0 +1,15 @@
+@import '../../global-styles/variables.scss';
+
+.formHeader{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:50px;  
+}
+
+.text{
+    color:var(--special_gray);
+    width:58%;
+}
